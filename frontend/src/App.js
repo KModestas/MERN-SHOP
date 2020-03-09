@@ -60,14 +60,14 @@ function App() {
 	}
 
 	return (
-		<React.Fragment>
+		<>
 			<Header />
 			<main>
 				<NewProduct onAddProduct={addProductHandler} />
 				{isLoading && <p className='loader'>Loading...</p>}
 				{!isLoading && <ProductList items={loadedProducts} />}
 			</main>
-		</React.Fragment>
+		</>
 	)
 }
 
